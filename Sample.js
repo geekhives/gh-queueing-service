@@ -1,4 +1,4 @@
-import { processQueue, app } from './src/Queue';
+import { processQueue, app } from './Queue';
 
 const SampleProcess = (data, done) => {
     console.log(data)
