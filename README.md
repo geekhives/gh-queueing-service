@@ -1,6 +1,13 @@
 # queueing-service
 Generic Queuing Service With Listener
 
+### Package
+
+ ```
+ "dependencies": {
+    "queue": "geekhives/queueing-service"
+  }
+  ```
 
 ## Available Scripts
 
@@ -10,7 +17,7 @@ In the project directory, you can run:
 
 ## How to it works
 ```
-import { processQueue, app } from './src/Queue';
+import { processQueue, app } from 'queue';
 
 const SampleProcess = (data, done) => {
     console.log(data)
