@@ -23,3 +23,32 @@ app.listen(process.env.PORT);
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Sample Job Post
+
+### URL
+```
+POST localhost:3002/job
+```
+
+### Header
+```
+Basic Auth: foo:bar
+```
+
+### Body
+```
+{
+   "type": "email",
+   "data": {
+     "name": "alee",
+     "to": "jinggov@gmail.com",
+     "subject": "Marina Account Activation",
+     "link": "https://marina.site.geek-demos.com"
+   },
+   "options" : {
+     "attempts": 3,
+     "priority": "high"
+   }
+ }
+ ```
