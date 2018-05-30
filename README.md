@@ -10,6 +10,8 @@ In the project directory, you can run:
 
 ## How to it works
 ```
+import { processQueue, app } from './src/Queue';
+
 const SampleProcess = (data, done) => {
     console.log(data)
     done();
