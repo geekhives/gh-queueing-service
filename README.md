@@ -36,15 +36,13 @@ POST localhost:3002/job
 Basic Auth: foo:bar
 ```
 
-### Body
+### Sample JSON Body
 ```
 {
    "type": "email",
    "data": {
-     "name": "alee",
-     "to": "jinggov@gmail.com",
-     "subject": "Marina Account Activation",
-     "link": "https://marina.site.geek-demos.com"
+     "name": "jinggo",
+     "account_id": "1"
    },
    "options" : {
      "attempts": 3,
