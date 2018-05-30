@@ -1,4 +1,4 @@
-import { processQueue, app } from './Queue';
+import { processQueue, app } from './index';
 
 processQueue((data, done) => {
     console.log('Email',data)
