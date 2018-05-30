@@ -52,3 +52,20 @@ Basic Auth: foo:bar
    }
  }
  ```
+
+ ### CLI
+ ```
+ curl -i -X POST -H "Content-Type: application/json" -d '{
+   "type": "sms",
+   "data": {
+     "name": "alee",
+     "to": "jinggov@gmail.com",
+     "subject": "Marina Account Activation",
+     "link": "https://marina.site.geek-demos.com"
+   },
+   "options" : {
+     "attempts": 3,
+     "priority": "high"
+   }
+ }' localhost:3002/job -u foo:bar
+ ```
