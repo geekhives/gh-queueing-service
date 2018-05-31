@@ -1,11 +1,13 @@
 import { processQueue, app } from './index2';
 
-processQueue((data, done) => {
+processQueue((job, done) => {
+    const { data } = job;
     console.log('Email',data)
     done();
 }, 'email', 20);
 
-processQueue((data, done) => {
+processQueue((job, done) => {
+    const { data } = job;
     console.log('SMS',data)
     done();
 }, 'sms', 20);
