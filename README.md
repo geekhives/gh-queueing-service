@@ -65,10 +65,11 @@ Basic Auth: foo:bar
  curl -i -X POST -H "Content-Type: application/json" -d '{
    "type": "sms",
    "data": {
-     "name": "alee",
-     "to": "jinggov@gmail.com",
-     "subject": "Marina Account Activation",
-     "link": "https://marina.site.geek-demos.com"
+      "title": "Sample Job Process",
+      "name": "alee",
+      "to": "jinggov@gmail.com",
+      "subject": "Marina Account Activation",
+      "link": "https://marina.site.geek-demos.com"
    },
    "options" : {
      "attempts": 3,
