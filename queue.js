@@ -15,7 +15,7 @@ queue.setMaxListeners(1000);
 
 const processQueue = (func, type, n) => {
     queue.process(type, n, (job, done) => {
-        func(job.data, done)
+        func(job, done)
     })
 }
 

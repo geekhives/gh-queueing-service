@@ -35,7 +35,7 @@ queue.setMaxListeners(1000);
 
 var processQueue = function processQueue(func, type, n) {
     queue.process(type, n, function (job, done) {
-        func(job.data, done);
+        func(job, done);
     });
 };
 
