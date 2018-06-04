@@ -1,4 +1,4 @@
-# queueing-service
+# GH Queueing Service
 Generic Queuing Service With Listener
 
 ### Package
