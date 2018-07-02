@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "NODE_ENV=dev babel-node Sample.js --presets es2015,stage-0",
-    "install": "babel queue.js --out-file index.js"
+    "test-post": "NODE_ENV=dev babel-node post.js --presets es2015,stage-0",
+    "build": "babel queue.js --out-file index.js"
   },
   "dependencies": {
     "basic-auth-connect": "^1.0.0",
@@ -18,7 +19,9 @@
     "handlebars": "^4.0.11",
     "kue": "^0.11.6",
     "lodash": "^4.17.10",
-    "nodemailer": "^4.6.4"
+    "node-fetch": "^2.1.2",
+    "nodemailer": "^4.6.4",
+    "request": "^2.87.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
